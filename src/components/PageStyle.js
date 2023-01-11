@@ -72,7 +72,7 @@ export const MainSwip = styled.article`
   }
   .headBg .firstBg {
     height: 100%;
-    background: url(../images/1205-hero-2.jpg) no-repeat 50% / cover;
+    background: url(path + "/images/1205-hero-2.jpg") no-repeat 50% / cover;
     border-radius: 70px;
     padding: 0 120px;
     display: flex;

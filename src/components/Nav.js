@@ -3,9 +3,11 @@ import { Link } from "react-router-dom";
 import { Navi } from './PageStyle';
 
 function Nav() {
+  const path = process.env.PUBLIC_URL;
+  
   return (
     <Navi>
-      <h1><Link><img src="/images/logo-dyami.png" alt="로고" /></Link></h1>
+      <h1><Link><img src={path + "/images/logo-dyami.png"} alt="로고" /></Link></h1>
       <ul id="gnb">
         <li>
           <Link to="/">about</Link>

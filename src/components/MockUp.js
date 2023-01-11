@@ -2,6 +2,8 @@ import 'remixicon/fonts/remixicon.css';
 import { Mock } from './PageStyle';
 
 function MockUp() {
+  const path = process.env.PUBLIC_URL;
+
   return (
     <Mock>
       <div className="mockupLine">
@@ -21,7 +23,7 @@ function MockUp() {
         <button><i className="ri-arrow-right-s-line"></i></button>
       </div>
       <div className="mockupLine">
-        <img src="./images/1205-mockup.png" alt="mockup" />
+        <img src={path + "/images/1205-mockup.png"} alt="mockup" />
       </div>
     </Mock>
   );

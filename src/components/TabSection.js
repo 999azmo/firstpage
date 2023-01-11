@@ -2,6 +2,8 @@ import React from 'react';
 import { TabBox } from "./PageStyle";
 
 function TabSection() {
+  const path = process.env.PUBLIC_URL;
+
   return (
     <TabBox>
       <div className='mainTitle'>
@@ -24,7 +26,7 @@ function TabSection() {
           </div>
         </div>
         <div className="imgBox">
-          <img src="./images/1205-01.jpg" alt="imgBox" />
+          <img src={path + "/images/1205-01.jpg"} alt="imgBox" />
         </div>
       </div>
     </TabBox>

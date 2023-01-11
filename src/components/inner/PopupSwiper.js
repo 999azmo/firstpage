@@ -5,9 +5,8 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper";
 
 function PopupSwiper() {
-  const deco = {
-    height: '150px',
-  }
+  const path = process.env.PUBLIC_URL;
+
   return (
     <>
       <Swiper
@@ -21,7 +20,7 @@ function PopupSwiper() {
       >
         <SwiperSlide style={{height:"150px"}}>
           <div className="popupPlay">
-            <img src="/images/1205-02.jpg" alt="Popup1" />
+            <img src={path + "/images/1205-02.jpg"} alt="Popup1" />
             <a href="#" className="iconBox">
               <i className="ri-add-line"></i>
             </a>
@@ -31,7 +30,7 @@ function PopupSwiper() {
         </SwiperSlide>
         <SwiperSlide>
           <div className="popupPlay">
-            <img src="/images/1205-03.jpg" alt="Popup2" />
+            <img src={path + "/images/1205-03.jpg"} alt="Popup2" />
             <a href="#" className="iconBox">
               <i className="ri-file-copy-line"></i>
             </a>
@@ -41,7 +40,7 @@ function PopupSwiper() {
         </SwiperSlide>
         <SwiperSlide>
           <div className="popupPlay">
-            <img src="./images/1205-04.jpg" alt="Popup3" />
+            <img src={path + "/images/1205-04.jpg"} alt="Popup3" />
             <a href="#" className="iconBox">
               <i className="ri-play-fill"></i>
             </a>
@@ -51,7 +50,7 @@ function PopupSwiper() {
         </SwiperSlide>
         <SwiperSlide>
           <div className="popupPlay">
-            <img src="./images/1205-05.jpg" alt="Popup4" />
+            <img src={path + "/images/1205-05.jpg"} alt="Popup4" />
             <a href="#" className="iconBox">
               <i className="ri-link"></i>
             </a>

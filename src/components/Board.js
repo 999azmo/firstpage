@@ -32,8 +32,6 @@ function Board() {
                 <img src="https://via.placeholder.com/640x480/DDDDDD" alt="img01" />
                 <Link to="/">메일로 문의주시면 빠른 답변 드리고 있습니다.</Link>
               </td>
-            </tr>
-            <tr>
               <td>
                 <img src="https://via.placeholder.com/640x480/DDDDDD" alt="img02" />
                 <Link to="/">메일로 문의주시면 빠른 답변 드리고 있습니다.</Link>
