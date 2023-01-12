@@ -1,4 +1,5 @@
 import React from 'react';
+import InMap from './inner/InMap';
 import { MapBox } from './PageStyle';
 
 function MapSection() {
@@ -8,7 +9,7 @@ function MapSection() {
         <p className="miniTitle">Map Section</p>
         <h3>찾아오시는 길</h3>
       </div>
-      <div id="kakaoMap"></div>
+      <InMap />
       <div className="mapInfo">
         <div className="infoList">
           <h4>주소</h4>

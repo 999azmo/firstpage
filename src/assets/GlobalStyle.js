@@ -4,15 +4,13 @@ import reset from "styled-reset";
 const GlobalStyle = createGlobalStyle`
   ${reset}
   @import url('https://webfontworld.github.io/naver/NanumSquareRound.css');
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
   @import url("https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css");
 
   html {
     scroll-behavior: smooth;
   }
   body {
-    font-family: 'Noto Sans KR', sans-serif;
-    /* font-family: 'NanumSquareRound', sans-serif; */
+    font-family: 'NanumSquareRound', sans-serif;
     font-size: 18px;
     line-height: 1.5;
   }
@@ -26,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
     color: inherit;
   }
   article {
-    padding: 150px 200px;
+    padding: 7.8vw 10.41vw;
   }
   .miniTitle {
     color: #f5805a;

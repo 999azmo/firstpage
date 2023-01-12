@@ -164,7 +164,7 @@ export const TabBox = styled.article`
   }
   .branding::before {
     content: "";
-    width: 40px; height: 40px;
+    width: 0; height: 0;
     border-style: solid;
     border-width: 20px 0 20px 40px;
     border-color:transparent transparent transparent #f5805a;

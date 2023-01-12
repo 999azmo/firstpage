@@ -11,6 +11,7 @@ import ContactUs from "./components/ContactUs";
 import GlobalStyle from "./assets/GlobalStyle";
 import Footer from "./components/Footer";
 import GoUp from "./components/GoUp";
+import "./assets/font.css"
 
 function App() {
   return (
