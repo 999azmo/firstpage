@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import "../assets/animation.css"
+import 'remixicon/fonts/remixicon.css';
+
 // Nav
 export const Navi = styled.nav`
   text-transform: uppercase;
@@ -63,28 +65,11 @@ export const Navi = styled.nav`
 `;
 // MainSwiper
 export const MainSwip = styled.article`
-  margin-top: 100px;
-  padding: 0 80px;
-  
-  .headBg {
-    height: 700px;
-    position: relative;
-  }
-  .headBg .firstBg {
-    height: 100%;
-    background: url(path + "/images/1205-hero-2.jpg") no-repeat 50% / cover;
-    border-radius: 70px;
-    padding: 0 120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
   .headBg h2 {
     letter-spacing: 2px;
     line-height: 1.2;
     font-weight: 900;
     font-size: 50px;
-    color: #222222;
 
     animation: moveDown 1.5s both;
   }
@@ -97,7 +82,6 @@ export const MainSwip = styled.article`
   }
   .headBg .ghostBtn {
     font-size: 16px;
-    border: 2px solid #333;
     margin: 40px 0 5px;
     width: 180px; height: 50px;
     line-height: 50px;
@@ -107,8 +91,6 @@ export const MainSwip = styled.article`
     animation: moveUp 1.5s both;
   }
   .headBg .ghostBtn:hover{
-    background-color: #333333;
-    color: #fff;
     transition: .4s;
   }
   .slideBtn {
@@ -131,7 +113,7 @@ export const MainSwip = styled.article`
     font-size: 25px;
   }
   .leftBtn > a {
-    width: 42px;
+    width: 44px;
   }
   .slideBtn:hover {
     border: 1px solid #f5805a;
@@ -338,10 +320,11 @@ export const Mock = styled.article`
   background-color: #F8F9FA;
   display: flex;
   justify-content: space-between;
-
-  .mockupLine {
-  width: 700px;
+  .mockupFlex {
+    display: flex;
+    justify-content: space-between;
   }
+  .mockupLine { width: 50%;}
   .mockupLine .mainTitle h3 {
     margin-bottom: 48px;
   }
@@ -358,22 +341,26 @@ export const Mock = styled.article`
   .mockupLine img {
     width: 100%;
   }
-  button {
-    border: none;
+  .swiper-button-prev, .swiper-button-next {
     width: 50px; height: 50px;
     background-color: #EBECED;
     color: #2f2f2f;
     transition: .3s;
-    margin-top: 150px;
+    opacity: 1;
+    top: 88%;
+    left: 0;
   }
-  button i {
-    font-size: 32px;
-    line-height: 50px;
+  .swiper-button-next {
+    left: 52px;
   }
-  button:hover {
+  .swiper-button-prev:hover, .swiper-button-next:hover {
     background-color: #959596;
     color: #f6f6f6;
     transition: .3s;
+  }
+  .swiper-button-prev:after, .swiper-button-next:after{
+    font-size: 16px;
+    font-weight: bold;
   }
 `;
 
@@ -435,7 +422,7 @@ export const BoardBox = styled.article`
 
 
 // MapSection
-export const Map = styled.article`
+export const MapBox = styled.article`
   background-image: linear-gradient(#fff, #fff 45%,#F8F9FA 45%, #F8F9FA 100%);
   border-top: 1px solid #EEEEEE;
   padding: 150px 144px;

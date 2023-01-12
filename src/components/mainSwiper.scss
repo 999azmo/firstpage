@@ -1,0 +1,56 @@
+.mainSwip {
+  margin-top: 100px;
+  padding: 0 80px;
+  .headBg {
+    height: 700px;
+    position: relative;
+    .firstBg {
+      height: 100%;
+      border-radius: 70px;
+      padding: 0 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .bg1 {
+      background: url(../assets/images/1205-hero-2.jpg) no-repeat 50% / cover;
+      color: #222222;
+      .ghostBtn {
+        border: 2px solid #333;
+      }
+      .ghostBtn:hover {
+        background-color: #333;
+        color: #fff;
+      }
+    }
+    .bg2 {
+      background: url(../assets/images/1205-hero-1.jpg) no-repeat 50% / cover;
+      color: #fff;
+      align-items: center;
+      text-align: center;
+      .ghostBtn {
+        border: 2px solid #fff;
+      }
+      .ghostBtn:hover {
+        background-color: #fff;
+        color: #333;
+      }
+    }
+  }
+}
+.MainBox {
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    content: "";
+    width: 44px; 
+    height: 44px;
+  }
+  .swiper-button-prev {
+    width: 44px; 
+    left: 20px;
+  }
+  .swiper-button-next {
+    width: 44px; 
+    right: 20px;
+  }
+}

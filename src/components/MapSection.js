@@ -1,9 +1,9 @@
 import React from 'react';
-import { Map } from './PageStyle';
+import { MapBox } from './PageStyle';
 
 function MapSection() {
   return (
-    <Map>
+    <MapBox>
       <div className="mainTitle">
         <p className="miniTitle">Map Section</p>
         <h3>찾아오시는 길</h3>
@@ -25,7 +25,7 @@ function MapSection() {
           <p>점심시간 12:00~13:00</p>
         </div>
       </div>
-    </Map>
+    </MapBox>
   );
 }
 

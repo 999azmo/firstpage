@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import { Pagination } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 
 function PopupSwiper() {
   const path = process.env.PUBLIC_URL;
@@ -15,7 +15,11 @@ function PopupSwiper() {
         pagination={{
           clickable: true,
         }}
-        modules={[Pagination]}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        modules={[Pagination , Autoplay]}
         className="mySwiper"
       >
         <SwiperSlide style={{height:"150px"}}>
