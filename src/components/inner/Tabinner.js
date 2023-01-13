@@ -29,7 +29,8 @@ function Tabinner() {
         ))}
       </div>
       <div className="imgBox">
-        { select == 1 ? <img src={path + `/images/1205-01.jpg`} alt="imgBox" /> : <img src={path + `/images/1280x1000.jpg`} alt="imgBox" /> }
+        { select === 1 ? <img src={path + `/images/1205-01.jpg`} alt="imgBox" /> : <img src={path + `/images/1280x1000.jpg`} alt="imgBox" /> }
+        {/* { select === 1 && <img src={path + `/images/1205-01.jpg`} alt="imgBox" /> || <img src={path + `/images/1280x1000.jpg`} alt="imgBox" /> } */}
       </div>
     </>
   );
