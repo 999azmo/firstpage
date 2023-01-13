@@ -152,27 +152,30 @@ export const TabBox = styled.article`
     margin-bottom: 30px;
     padding: 40px;
     color: #A6A6A6;
+    p {
+      display: none;
+    }
   }
   .tabClick {
     position: relative;
   }
-  .branding {
+  .colorTab {
     border: none;
     background-color: #f5805a;
     color: #fff;
     box-shadow: 17px 5px 38px rgba(0, 0, 0, .2);
-  }
-  .branding::before {
-    content: "";
-    width: 0; height: 0;
-    border-style: solid;
-    border-width: 20px 0 20px 40px;
-    border-color:transparent transparent transparent #f5805a;
-    position: absolute;
-    right: -20px;
-  }
-  .program p, .publishing p {
-    display: none;
+    p {
+      display: block;
+    }
+    &::before {
+      content: "";
+      width: 0; height: 0;
+      border-style: solid;
+      border-width: 20px 0 20px 40px;
+      border-color:transparent transparent transparent #f5805a;
+      position: absolute;
+      right: -20px;
+    }
   }
   .imgBox img{
     border-radius: 50px;
